@@ -806,3 +806,20 @@ footer strong {
     flex-direction: column;
   }
 }
+
+/* =========================================================
+   HERO SCHOOL PHOTO
+   ========================================================= */
+
+.hero-card {
+  padding: 12px;
+  overflow: hidden;
+}
+
+.hero-photo {
+  width: 100%;
+  height: 470px;
+  display: block;
+  object-fit: cover;
+  border-radius: 12px;
+}
