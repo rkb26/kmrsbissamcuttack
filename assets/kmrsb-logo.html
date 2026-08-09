@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalinga Model Residential School (KMRS) | Bissamcuttack</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            blue: '#0d47a1',
+                            teal: '#00897b',
+                            gold: '#f57c00',
+                            light: '#f4f6f9'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 font-sans text-gray-800 flex flex-col min-h-screen">
+
+    <!-- Top Govt Bar -->
+    <div class="bg-slate-900 text-slate-300 text-xs py-2 px-4 sm:px-8 flex flex-wrap justify-between items-center border-b border-slate-700">
+        <div>
+            <span><i class="fa-solid fa-building-columns text-brand-gold mr-1"></i> Managed by ST & SC Development Department, Govt. of Odisha</span>
+        </div>
+        <div class="flex items-center space-x-4">
+            <span><i class="fa-solid fa-location-dot text-red-400 mr-1"></i> Bitaguda, Bissamcuttack, Rayagada, Odisha 765019</span>
+        </div>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
+            <!-- Brand / Logo -->
+            <div class="flex items-center space-x-3">
+                <div class="w-12 h-12 bg-brand-blue text-white rounded-full flex items-center justify-center font-bold text-xl shadow-md border-2 border-brand-gold">
+                    KMRS
+                </div>
+                <div>
+                    <h1 class="text-lg sm:text-xl font-bold text-slate-900 tracking-tight leading-tight">KALINGA MODEL RESIDENTIAL SCHOOL</h1>
+                    <p class="text-xs text-brand-teal font-medium">Bissamcuttack, Rayagada, Odisha</p>
+                </div>
+            </div>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex space-x-6 text-sm font-semibold text-gray-700">
+                <a href="#home" class="hover:text-brand-blue transition">Home</a>
+                <a href="#about" class="hover:text-brand-blue transition">About Us</a>
+                <a href="#academics" class="hover:text-brand-blue transition">Academics</a>
+                <a href="#facilities" class="hover:text-brand-blue transition">Facilities</a>
+                <a href="#notices" class="hover:text-brand-blue transition">Notice Board</a>
+                <a href="#contact" class="hover:text-brand-blue transition">Contact</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-gray-700 text-2xl focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Nav -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-100 border-t border-gray-200 px-4 py-3 space-y-2 text-sm font-semibold">
+            <a href="#home" class="block py-1 hover:text-brand-blue">Home</a>
+            <a href="#about" class="block py-1 hover:text-brand-blue">About Us</a>
+            <a href="#academics" class="block py-1 hover:text-brand-blue">Academics</a>
+            <a href="#facilities" class="block py-1 hover:text-brand-blue">Facilities</a>
+            <a href="#notices" class="block py-1 hover:text-brand-blue">Notice Board</a>
+            <a href="#contact" class="block py-1 hover:text-brand-blue">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative bg-slate-900 text-white py-20 lg:py-28 px-4 overflow-hidden">
+        <div class="absolute inset-0 opacity-20 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1350&q=80');"></div>
+        <div class="relative max-w-5xl mx-auto text-center space-y-6">
+            <span class="inline-block bg-brand-gold text-white text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">Nurturing Excellence in Tribal & Rural Education</span>
+            <h2 class="text-3xl sm:text-5xl font-extrabold leading-tight">Empowering Youth Through Quality Education & Holistic Growth</h2>
+            <p class="text-base sm:text-lg text-slate-300 max-w-3xl mx-auto">
+                Kalinga Model Residential School (KMRS), Bissamcuttack provides fully funded, modern secondary education, residential facilities, and career guidance to students in Rayagada district.
+            </p>
+            <div class="pt-4 flex flex-wrap justify-center gap-4">
+                <a href="#about" class="bg-brand-blue hover:bg-blue-800 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition duration-200">Learn More</a>
+                <a href="#contact" class="bg-brand-gold hover:bg-amber-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition duration-200">Admission Inquiry</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Highlights -->
+    <section class="bg-brand-blue text-white py-8 px-4 shadow-inner">
+        <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div class="p-4 border-r border-blue-400/30 last:border-none">
+                <i class="fa-solid fa-graduation-cap text-3xl mb-2 text-brand-gold"></i>
+                <h3 class="text-2xl font-bold">CBSE</h3>
+                <p class="text-xs text-blue-200">Aligned Curriculum</p>
+            </div>
+            <div class="p-4 border-r border-blue-400/30 last:border-none">
+                <i class="fa-solid fa-hotel text-3xl mb-2 text-brand-gold"></i>
+                <h3 class="text-2xl font-bold">100% Free</h3>
+                <p class="text-xs text-blue-200">Residential & Boarding</p>
+            </div>
+            <div class="p-4 border-r border-blue-400/30 last:border-none">
+                <i class="fa-solid fa-book-open-reader text-3xl mb-2 text-brand-gold"></i>
+                <h3 class="text-2xl font-bold">FREE</h3>
+                <p class="text-xs text-blue-200">Textbooks & Uniforms</p>
+            </div>
+            <div class="p-4">
+                <i class="fa-solid fa-person-running text-3xl mb-2 text-brand-gold"></i>
+                <h3 class="text-2xl font-bold">Holistic</h3>
+                <p class="text-xs text-blue-200">Sports & Cultural Exposure</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 px-4 max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-4">
+                <div class="inline-block border-l-4 border-brand-teal pl-3 text-brand-teal font-semibold text-sm uppercase">About KMRS Bissamcuttack</div>
+                <h2 class="text-3xl font-bold text-slate-900">Transforming Tribal & Rural Education in Odisha</h2>
+                <p class="text-gray-600 leading-relaxed">
+                    Kalinga Model Residential School (KMRS) Bissamcuttack is a premier co-educational residential institution managed under the aegis of the **ST & SC Development Department, Government of Odisha**. 
+                </p>
+                <p class="text-gray-600 leading-relaxed">
+                    Located in **Bitaguda, PO-Bissamcuttack (Rayagada District)**, the institution provides free education, boarding, nutritious meals, textbooks, and state-of-the-art facilities to deserving students from tribal and rural backgrounds.
+                </p>
+                <div class="grid grid-cols-2 gap-4 pt-4">
+                    <div class="bg-gray-100 p-4 rounded-lg border-l-4 border-brand-blue">
+                        <h4 class="font-bold text-slate-800">Our Vision</h4>
+                        <p class="text-xs text-gray-600 mt-1">To bridge the educational gap and nurture confident leaders for tomorrow.</p>
+                    </div>
+                    <div class="bg-gray-100 p-4 rounded-lg border-l-4 border-brand-gold">
+                        <h4 class="font-bold text-slate-800">Our Mission</h4>
+                        <p class="text-xs text-gray-600 mt-1">All-round academic, physical, and moral development in a safe atmosphere.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="bg-brand-blue/10 rounded-2xl p-6 shadow-xl relative z-10">
+                    <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=800&q=80" alt="School Classrooms" class="rounded-lg object-cover w-full h-80 shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academics & Facilities -->
+    <section id="facilities" class="bg-slate-100 py-16 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="text-3xl font-bold text-slate-900">Campus Facilities & Infrastructure</h2>
+                <p class="text-gray-600 text-sm mt-2">Comprehensive environment designed to foster academic excellence, physical health, and creative skills.</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-blue-100 text-brand-blue rounded-lg flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-house-user"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-800 mb-2">Residential Hostels</h3>
+                    <p class="text-sm text-gray-600">Secure, comfortable, and separate hostel facilities for boys and girls with round-the-clock supervision and medical support.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-teal-100 text-brand-teal rounded-lg flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-800 mb-2">Computer & IT Labs</h3>
+                    <p class="text-sm text-gray-600">Modern computer labs equipped with high-speed internet and practical digital literacy instruction for all grades.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-amber-100 text-brand-gold rounded-lg flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-vials"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-800 mb-2">Science Laboratories</h3>
+                    <p class="text-sm text-gray-600">Fully equipped Physics, Chemistry, and Biology laboratories enabling hands-on learning and practical experimentation.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-lg flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-book"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-800 mb-2">Library & Reading Room</h3>
+                    <p class="text-sm text-gray-600">Extensive collection of academic books, storybooks, reference guides, periodicals, and newspapers.</p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-green-100 text-green-600 rounded-lg flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-futbol"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-800 mb-2">Sports & Playground</h3>
+                    <p class="text-sm text-gray-600">Large playground facilities for Football, Athletics, Volleyball, Badminton, and daily Yoga sessions.</p>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-rose-100 text-rose-600 rounded-lg flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-bowl-food"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-800 mb-2">Nutritious Mess Facilities</h3>
+                    <p class="text-sm text-gray-600">Hygienic dining hall serving balanced meals strictly adhering to government nutritional guidelines.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notice Board Section -->
+    <section id="notices" class="py-16 px-4 max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Notice List -->
+            <div class="md:col-span-2 bg-white p-6 rounded-xl shadow border border-gray-100">
+                <div class="flex items-center justify-between mb-6 pb-2 border-b">
+                    <h3 class="text-xl font-bold text-slate-900"><i class="fa-solid fa-bullhorn text-brand-gold mr-2"></i>Latest Notices & Announcements</h3>
+                    <span class="text-xs bg-red-100 text-red-600 font-semibold px-2.5 py-0.5 rounded">Live Updates</span>
+                </div>
+                <div class="space-y-4">
+                    <div class="p-4 bg-slate-50 rounded-lg border-l-4 border-brand-blue flex justify-between items-start">
+                        <div>
+                            <span class="text-xs text-gray-500 font-medium">Updated Recently</span>
+                            <h4 class="font-semibold text-slate-800 mt-1">Annual Admission Entrance Test Guidelines</h4>
+                            <p class="text-xs text-gray-600 mt-1">Information regarding Class VI entrance test registration conducted by ST & SC Dev Dept.</p>
+                        </div>
+                        <span class="bg-blue-100 text-brand-blue text-xs font-bold px-2 py-1 rounded">New</span>
+                    </div>
+
+                    <div class="p-4 bg-slate-50 rounded-lg border-l-4 border-brand-teal flex justify-between items-start">
+                        <div>
+                            <span class="text-xs text-gray-500 font-medium">Updated Recently</span>
+                            <h4 class="font-semibold text-slate-800 mt-1">Guest Faculty Engagement Notification</h4>
+                            <p class="text-xs text-gray-600 mt-1">Walk-in Interviews and recruitment details for PGT/TGT teaching posts.</p>
+                        </div>
+                    </div>
+
+                    <div class="p-4 bg-slate-50 rounded-lg border-l-4 border-brand-gold flex justify-between items-start">
+                        <div>
+                            <span class="text-xs text-gray-500 font-medium">Notice</span>
+                            <h4 class="font-semibold text-slate-800 mt-1">Parent-Teacher Meeting & Academic Progress Report</h4>
+                            <p class="text-xs text-gray-600 mt-1">Parents/Guardians are invited to review student performance for the term.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Info Box -->
+            <div class="bg-brand-blue text-white p-6 rounded-xl shadow flex flex-col justify-between">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 border-b border-blue-400 pb-2"><i class="fa-solid fa-circle-info mr-2"></i>School Overview</h3>
+                    <ul class="space-y-3 text-xs sm:text-sm text-blue-100">
+                        <li><strong>School Name:</strong> Kalinga Model Residential School (KMRS)</li>
+                        <li><strong>Location:</strong> Bitaguda, Bissamcuttack</li>
+                        <li><strong>District:</strong> Rayagada, Odisha</li>
+                        <li><strong>Management:</strong> ST & SC Development Department</li>
+                        <li><strong>Curriculum:</strong> CBSE / State Board</li>
+                        <li><strong>Category:</strong> Co-Educational Boarding</li>
+                    </ul>
+                </div>
+                <div class="mt-6 pt-4 border-t border-blue-400">
+                    <p class="text-xs text-blue-200">For district recruitment & official notifications visit:</p>
+                    <a href="https://rayagada.odisha.gov.in" target="_blank" class="inline-block mt-2 bg-brand-gold hover:bg-amber-600 text-white font-semibold text-xs px-4 py-2 rounded">rayagada.odisha.gov.in <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Map Section -->
+    <section id="contact" class="bg-slate-900 text-white py-16 px-4">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12">
+            <!-- Contact Info -->
+            <div class="space-y-6">
+                <div>
+                    <span class="text-brand-gold font-semibold text-sm uppercase">Get In Touch</span>
+                    <h2 class="text-3xl font-bold mt-1">Contact KMRS Bissamcuttack</h2>
+                    <p class="text-slate-400 text-sm mt-2">Reach out to us for admission queries, official communications, or campus visits.</p>
+                </div>
+
+                <div class="space-y-4 text-sm text-slate-300">
+                    <div class="flex items-start space-x-3">
+                        <i class="fa-solid fa-location-dot text-brand-gold text-lg mt-1"></i>
+                        <div>
+                            <strong>Campus Address:</strong><br>
+                            Kalinga Model Residential School (KMRS)<br>
+                            At/PO: Bitaguda, Bissamcuttack<br>
+                            District: Rayagada, Odisha – 765019
+                        </div>
+                    </div>
+
+                    <div class="flex items-center space-x-3">
+                        <i class="fa-solid fa-building text-brand-gold text-lg"></i>
+                        <div>
+                            <strong>Governing Body:</strong> Collector & District Magistrate / PA ITDA Rayagada
+                        </div>
+                    </div>
+
+                    <div class="flex items-center space-x-3">
+                        <i class="fa-solid fa-envelope text-brand-gold text-lg"></i>
+                        <div>
+                            <strong>Email Inquiry:</strong> info.kmrsbissamcuttack@gmail.com
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="bg-slate-800 p-6 sm:p-8 rounded-xl shadow-xl">
+                <h3 class="text-xl font-bold mb-4 text-white">Send Us a Message</h3>
+                <form id="contact-form" class="space-y-4">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-300 mb-1">Full Name</label>
+                        <input type="text" placeholder="Your Name" required class="w-full bg-slate-700 text-white rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-blue">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-300 mb-1">Phone / Mobile</label>
+                        <input type="tel" placeholder="Your Mobile Number" required class="w-full bg-slate-700 text-white rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-blue">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-300 mb-1">Message / Inquiry</label>
+                        <textarea rows="3" placeholder="Write your query here..." required class="w-full bg-slate-700 text-white rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-blue"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-brand-gold hover:bg-amber-600 text-white font-semibold py-2.5 rounded text-sm transition">Submit Message</button>
+                    <p id="form-status" class="hidden text-xs text-green-400 text-center mt-2">Thank you! Your inquiry has been submitted.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 text-xs py-6 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p>© <span id="year"></span> Kalinga Model Residential School (KMRS), Bissamcuttack. All Rights Reserved.</p>
+            <p>Initiative by ST & SC Development Department, Government of Odisha.</p>
+        </div>
+    </footer>
+
+    <!-- Interactive Script -->
+    <script>
+        // Set dynamic year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Contact Form Handler
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            document.getElementById('form-status').classList.remove('hidden');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
