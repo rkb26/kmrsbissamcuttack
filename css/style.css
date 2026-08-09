@@ -80,14 +80,14 @@ a {
 }
 
 .brand-mark {
-  width: 58px;
-  height: 58px;
+  width: 70px;
+  height: 70px;
   overflow: hidden;
   padding: 0;
-  background: #ffffff;
-  border-radius: 50%;
+  background: transparent;
+  border: none;
+  border-radius: 0;
   flex-shrink: 0;
-  border: 2px solid #123b2a;
 }
 
 .brand-mark img {
